@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loki</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/lokiFav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--MOUSE SVG-->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xml:lang="en"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 500 500"
+    >
+      <defs>
+        <path
+          id="textcircle"
+          d="M250,400
+                 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+          transform="rotate(12,250,250)"
+        />
+      </defs>
+      <rect width="100%" height="100%" fill="none" />
+      <text>
+        <textPath
+          xlink:href="#textcircle"
+          aria-label="All for One &amp; One for All"
+          textLength="942"
+        >
+          Come on, What did you expect?
+        </textPath>
+      </text>
+    </svg>
+
+    <div class="wrapper">
+      <!--OVERLAY-->
+      <div class="overlay first"></div>
+      <div class="overlay second"></div>
+      <div class="overlay third"></div>
+
+      <!--NAVBAR -->
+      <div class="navbar">
+        <div class="menu">
+          <img src="./images/lokiHelmet.png" alt="loki-helmet" />
+        </div>
+        <div class="lang">eng</div>
+      </div>
+
+      <!--LINKS -->
+      <div class="links">
+        <ul>
+          <li><a href="https://www.marvel.com/" target="_blank">marvel</a></li>
+          <li>
+            <a
+              href="https://www.marvel.com/characters/loki/on-screen/profile"
+              target="_blank"
+              >loki</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://marvel.fandom.com/wiki/Loki_Laufeyson_(Earth-616)"
+              target="_blank"
+              >fandom</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!--LOKI TEXT-->
+      <div class="text">
+        <img src="./images/loki-logo.png" alt="loki-logo" class="hidetext" />
+        <h2><span class="hidetext"> TRICKSTER </span></h2>
+        <h3><span class="hidetext">God of Mischief</span></h3>
+        <p>
+          <span class="hidetext">
+            "I know what this place is. The time keepers has build quite a
+            circus and I see the clowns are playing their parts to perfection".
+            <a
+              href="https://www.youtube.com/watch?v=nW948Va-l10"
+              class="loki"
+              target="_blank"
+              ><br />Loki</a
+            >
+          </span>
+        </p>
+      </div>
+
+      <!-- TRICKSTER-->
+      <!-- <div class="sponsor"></div> -->
+      <div class="trickster">
+        <img src="./images/greenTricks.png" alt="trickster" />
+        <p>mischief</p>
+      </div>
+
+      <!-- DISTORTION-->
+      <div class="distortion"></div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- three js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+      integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY="
+      crossorigin="anonymous"
+    ></script>
+    <!-- hover-effect js -->
+    <script src="./hover-effect.umd.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

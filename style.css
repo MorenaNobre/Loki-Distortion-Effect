@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background: #1c1d1d;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #b7c2b6;
+  /* color: #272724; */
+  cursor: pointer;
+}
+
+a:hover {
+  color: #387d32;
+}
+
+/*=== NAVBAR ===*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  color: #b7c2b6;
+}
+
+.navbar > div {
+  padding: 0 30px;
+  font-size: 1.25rem;
+}
+
+.navbar .menu {
+  margin-right: auto;
+}
+
+.navbar .menu img {
+  height: 62px;
+  width: 62px;
+}
+
+.navbar .lang {
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*=== LINKS ===*/
+.links ul {
+  position: absolute;
+  bottom: 250px;
+  left: -88px;
+  transform: rotate(-90deg);
+}
+
+.links ul li {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+/*=== TRICKSTER ===*/
+.text {
+  position: absolute;
+  top: 240px;
+  left: 200px;
+  transform: rotate(-90deg);
+}
+
+.text img {
+  width: 350px;
+  position: relative;
+}
+
+.text img .hidetext {
+  position: absolute;
+}
+
+.text h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  color: #387d32;
+
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+
+.text h3 .hidetext {
+  position: absolute;
+}
+
+.text h2 {
+  position: absolute;
+  top: 78px;
+  left: -40px;
+  color: rgb(0, 0, 0);
+  z-index: -1;
+  font-size: 60px;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.text p {
+  width: 342px;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  /* color: #8CD53D; */
+  color: #b7c2b6;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+}
+
+.text p .hidetext {
+  position: absolute;
+}
+
+.text p .loki {
+  font-size: 1rem;
+  color: #387d32;
+  transition: all .2s ease-in-out;
+}
+
+.text p .loki:hover{
+  color: #8CD53D;
+}
+
+/*=== TRICKSTER ===*/
+.trickster {
+  position: absolute;
+  right: 100px;
+  bottom: 66px;
+  /* bottom: 100px; */
+  /* text-align: left; */
+  text-align: center;
+  right: 40px;
+}
+
+.trickster img {
+  width: 200px;
+  transform: rotate(-90deg);
+}
+
+.trickster p {
+  font-size: 11px;
+  margin-top: 58px;
+  color: #b7c2b6;
+  text-transform: uppercase;
+  font-weight: 800;
+  transform: rotate(180deg);
+  letter-spacing: 1px;
+}
+
+/*=== DISTORTION ===*/
+.distortion {
+  width: 580px;
+  height: 720px;
+  position: absolute;
+  right: 250px;
+  bottom: 0;
+}
+
+/*=== DISTORTION ===*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: 99;
+}
+
+.first {
+  background: #3c6139;
+}
+
+.second {
+  /* background: #387d32; */
+  /* background: #284126; */
+  background: #3c6139;
+  left: 33.3%;
+}
+
+.third {
+  background: #3c6139;
+  left: 66.6%;
+}
+
+/*=== MOUSE FOLLOWER ===*/
+svg {
+  width: 6.25rem;
+  position: absolute;
+  animation: rotation 4.5s infinite linear;
+  pointer-events: none;
+  transition: top 1s, left 1s;
+  transition-timing-function: ease-out;
+  z-index: 1;
+}
+
+text {
+  font-size: 4em;
+  font-family: "Poppins";
+  font-weight: 500;
+  fill: #8CD53D;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
